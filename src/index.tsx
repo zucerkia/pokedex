@@ -1,7 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import './infrastructure/components/styles/index.scss'
-import Home from './infrastructure/components/Pages/Home'
+import Home from './infrastructure/components/pages/Home'
 import reportWebVitals from './infrastructure/reportWebVitals'
 
 const root = ReactDOM.createRoot(document.getElementById('root') as HTMLElement)
