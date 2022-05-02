@@ -1,0 +1,28 @@
+.input {
+    position: relative;
+
+    input {
+        width: 100%;
+        padding: 10px 0;
+        font-size: 16px;
+        color: var(--primary-green);
+        border: none;
+        border-bottom: 1px solid var(--primary-green);
+        outline: none;
+        background: transparent;
+
+        &:focus ~ label, &:valid ~ label {
+            top: -20px;
+            font-size: 12px;
+            left: 0;
+        }
+    }
+
+    label {
+        @apply absolute top-0 left-0 pointer-events-none font-bold;
+        padding: 10px 0;
+        font-size: 16px;
+        color: var(--primary-green);
+        transition: .2s;
+    }
+}

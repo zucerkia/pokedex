@@ -1,5 +1,7 @@
-.home-container {
-    @apply grid p-6 bg-red-400;
+.container {
+    @apply grid px-6 py-20 h-full relative bg-green-tertiary;
+    grid-template-columns: minmax(0, 530px) auto;
+    min-height: calc(100vh - 96px);
 }
  
   

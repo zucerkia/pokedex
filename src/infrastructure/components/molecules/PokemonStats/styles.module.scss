@@ -1,0 +1,9 @@
+.stats {
+    @apply grid grid-cols-2 gap-x-4 gap-y-6 bg-green-secondary p-4;
+    border-radius: 5px;
+
+
+    &__item {
+        @apply flex flex-col items-center;
+    }
+}

@@ -1,0 +1,5 @@
+.list {
+    @apply grid grid-cols-3 max-w-xl mx-auto gap-4 p-8 place-content-center;
+    border-radius: 10px;
+    width: 100%;
+}

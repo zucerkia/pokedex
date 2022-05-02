@@ -1,0 +1,18 @@
+.card {
+    @apply relative rounded-lg grid place-content-center shadow pt-8 pb-4 overflow-hidden;
+    background-color: white;
+    transition: all .5s;
+
+    &:hover {
+        @apply shadow-lg;
+        transform: scale(1.1)
+    }
+
+    &__badge {
+        @apply absolute text-white rounded-bl-lg grid place-content-center bg-green-secondary;
+        width: 32px;
+        height: 32px;
+        top: 0;
+        right: 0;
+    }
+}
