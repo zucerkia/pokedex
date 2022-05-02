@@ -1,7 +1,11 @@
 .container {
-    @apply grid px-6 py-20 h-full relative bg-green-tertiary;
-    grid-template-columns: minmax(0, 530px) auto;
+    @apply grid px-6 py-10 relative bg-green-tertiary max-w-7xl mx-auto;
     min-height: calc(100vh - 96px);
+    
+    @media screen and (min-width: theme('screens.lg') ) {
+        @apply py-20;
+        grid-template-columns: minmax(0, 530px) auto;
+    }
 }
  
   

@@ -2,10 +2,15 @@
     @apply inline-grid bg-white sticky place-content-center p-10;
     top: 100px;
     left: 0;
-    grid-template-columns: auto 300px;
-    grid-template-areas: "title stats" "img stats";
-    height: 70vh;
+    grid-column: auto;
+    grid-template-areas: "title" "img" "stats";
     gap: 1rem 4rem;
+
+    @media screen and (min-width: theme('screens.sm') ) {
+        grid-template-columns: auto 300px;
+        grid-template-areas: "title stats" "img stats";
+        height: 70vh;
+    }
 
     &__img {
         grid-area: img;

@@ -5,6 +5,9 @@
     --accent-green: #F7FF93;
 }
 
+body {
+    @apply bg-green-tertiary;
+}
 
 @tailwind base;
 @tailwind components;
