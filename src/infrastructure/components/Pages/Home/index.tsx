@@ -4,13 +4,14 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 // Components
 import PokemonDetail from '../../organisms/PokemonDetail'
 import PokemonList from '../../organisms/PokemonList'
+import Header from '../../molecules/Header'
 
 // Styles
 import styles from './styles.module.scss'
 
 const App: React.FC = () => (
   <main className="relative">
-    <header className="h-[96px] w-full top-0 left-0 bg-green">logo</header>
+    <Header />
     <div className={styles.container}>
       <Router>
         <PokemonList />

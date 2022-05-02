@@ -57,6 +57,7 @@ const PokemonList = () => {
           onChange={(e) => {
             setSearch(e.target.value)
           }}
+          required
         />
       </div>
       <ul className={styles.list}>

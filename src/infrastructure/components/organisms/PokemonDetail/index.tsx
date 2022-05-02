@@ -25,7 +25,6 @@ const PokemonDetail = () => {
         setIsLoading(true)
         const response = await productService.getProductById(Number(params.id))
         setPokemon(response.item)
-        console.log(response.item.abilities)
       } catch (error) {
         console.error(error)
       } finally {
