@@ -2,6 +2,7 @@
     @apply relative rounded-lg grid place-content-center shadow pt-8 pb-4 overflow-hidden;
     background-color: white;
     transition: all .5s;
+    max-width: 200px;
 
     &:hover {
         @apply shadow-lg;
